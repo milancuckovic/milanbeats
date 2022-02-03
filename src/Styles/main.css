@@ -1,0 +1,507 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#app{
+    height:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: radial-gradient(circle at center, #1b2735 0%,#162433 20%,#161633 50%,#161b31 80%,#090a0f 100%);
+}
+
+/* 
+    Header 
+*/
+.ho:hover{
+    opacity: 0.8;
+}
+/* STARS BACKGROUND */
+#stars {
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    animation: animStar 100s linear infinite;
+    box-shadow: 779px 331px rgb(255, 255, 234), 324px 42px rgb(255, 255, 234), 303px 86px rgb(255, 255, 234),
+    1312px 276px rgb(255, 255, 234), 451px 25px rgb(255, 255, 234), 521px 331px rgb(255, 255, 234), 1087px 71px rgb(255, 255, 234),
+    36px 346px rgb(255, 255, 234), 132px 34px rgb(255, 255, 234), 1698px 1px rgb(255, 255, 234), 1418px 64px rgb(255, 255, 234),
+    1448px 157px rgb(255, 255, 234), 1084px 232px rgb(255, 255, 234), 347px 76px rgb(255, 255, 234), 1722px 243px rgb(255, 255, 234),
+    1629px 335px rgb(255, 255, 234), 479px 69px rgb(255, 255, 234), 1231px 260px rgb(255, 255, 234), 586px 334px rgb(255, 255, 234),
+    164px 27px rgb(255, 255, 234), 8px 346px rgb(255, 255, 234), 1150px 126px rgb(255, 255, 234), 665px 350px rgb(255, 255, 234),
+    82px 187px rgb(255, 255, 234), 1933px 98px rgb(255, 255, 234), 1966px 277px rgb(255, 255, 234), 1975px 88px rgb(255, 255, 234),
+    779px 314px rgb(255, 255, 234), 1858px 154px rgb(255, 255, 234), 73px 307px rgb(255, 255, 234), 1693px 75px rgb(255, 255, 234),
+    1683px 108px rgb(255, 255, 234), 1768px 165px rgb(255, 255, 234), 654px 14px rgb(255, 255, 234), 494px 171px rgb(255, 255, 234),
+    1689px 189px rgb(255, 255, 234), 1660px 263px rgb(255, 255, 234), 1031px 303px rgb(255, 255, 234), 1203px 139px rgb(255, 255, 234),
+    1333px 321px rgb(255, 255, 234), 1113px 41px rgb(255, 255, 234), 1206px 164px rgb(255, 255, 234), 1325px 163px rgb(255, 255, 234),
+    142px 328px rgb(255, 255, 234), 572px 215px rgb(255, 255, 234), 1535px 296px rgb(255, 255, 234), 1419px 107px rgb(255, 255, 234),
+    1379px 100px rgb(255, 255, 234), 329px 46px rgb(255, 255, 234), 1791px 165px rgb(255, 255, 234), 935px 180px rgb(255, 255, 234),
+    1330px 182px rgb(255, 255, 234), 421px 293px rgb(255, 255, 234), 828px 350px rgb(255, 255, 234), 275px 316px rgb(255, 255, 234),
+    707px 60px rgb(255, 255, 234), 1605px 54px rgb(255, 255, 234), 625px 58px rgb(255, 255, 234), 717px 169px rgb(255, 255, 234),
+    1669px 246px rgb(255, 255, 234), 1925px 322px rgb(255, 255, 234), 1154px 180px rgb(255, 255, 234), 1929px 295px rgb(255, 255, 234),
+    1248px 240px rgb(255, 255, 234), 1045px 175px rgb(255, 255, 234), 166px 42px rgb(255, 255, 234), 1888px 177px rgb(255, 255, 234),
+    678px 196px rgb(255, 255, 234), 1370px 56px rgb(255, 255, 234), 1974px 140px rgb(255, 255, 234), 1786px 46px rgb(255, 255, 234),
+    1562px 173px rgb(255, 255, 234), 1056px 110px rgb(255, 255, 234), 1512px 37px rgb(255, 255, 234), 1795px 162px rgb(255, 255, 234),
+    1848px 60px rgb(255, 255, 234), 262px 171px rgb(255, 255, 234), 477px 99px rgb(255, 255, 234), 483px 88px rgb(255, 255, 234),
+    1239px 119px rgb(255, 255, 234), 1496px 64px rgb(255, 255, 234), 1649px 25px rgb(255, 255, 234), 1491px 194px rgb(255, 255, 234),
+    119px 99px rgb(255, 255, 234), 179px 147px rgb(255, 255, 234), 1341px 80px rgb(255, 255, 234), 1565px 170px rgb(255, 255, 234),
+    407px 154px rgb(255, 255, 234), 1754px 35px rgb(255, 255, 234), 1288px 98px rgb(255, 255, 234), 902px 199px rgb(255, 255, 234),
+    1755px 166px rgb(255, 255, 234), 186px 87px rgb(255, 255, 234), 1202px 188px rgb(255, 255, 234), 461px 121px rgb(255, 255, 234),
+    1400px 74px rgb(255, 255, 234), 1969px 189px rgb(255, 255, 234), 809px 52px rgb(255, 255, 234), 514px 121px rgb(255, 255, 234),
+    374px 275px rgb(255, 255, 234), 938px 197px rgb(255, 255, 234), 357px 55px rgb(255, 255, 234), 144px 172px rgb(255, 255, 234),
+    1572px 91px rgb(255, 255, 234), 402px 185px rgb(255, 255, 234), 1544px 119px rgb(255, 255, 234), 667px 125px rgb(255, 255, 234),
+    727px 149px rgb(255, 255, 234), 993px 232px rgb(255, 255, 234), 1772px 313px rgb(255, 255, 234), 1040px 159px rgb(255, 255, 234),
+    1204px 197px rgb(255, 255, 234), 1268px 79px rgb(255, 255, 234), 1555px 104px rgb(255, 255, 234), 986px 170px rgb(255, 255, 234),
+    978px 171px rgb(255, 255, 234), 713px 350px rgb(255, 255, 234), 407px 86px rgb(255, 255, 234), 461px 73px rgb(255, 255, 234),
+    284px 160px rgb(255, 255, 234), 103px 43px rgb(255, 255, 234), 1283px 131px rgb(255, 255, 234), 977px 118px rgb(255, 255, 234),
+    1966px 151px rgb(255, 255, 234), 1287px 112px rgb(255, 255, 234), 70px 109px rgb(255, 255, 234), 1189px 88px rgb(255, 255, 234),
+    1126px 173px rgb(255, 255, 234), 309px 129px rgb(255, 255, 234), 879px 76px rgb(255, 255, 234), 65px 47px rgb(255, 255, 234),
+    1003px 195px rgb(255, 255, 234), 658px 79px rgb(255, 255, 234), 402px 157px rgb(255, 255, 234), 35px 62px rgb(255, 255, 234),
+    529px 158px rgb(255, 255, 234), 164px 66px rgb(255, 255, 234), 1876px 129px rgb(255, 255, 234), 1541px 52px rgb(255, 255, 234),
+    270px 297px rgb(255, 255, 234), 440px 86px rgb(255, 255, 234), 1500px 80px rgb(255, 255, 234), 182px 175px rgb(255, 255, 234);
+}
+#stars2 {
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    animation: animStar 200s linear infinite;
+    box-shadow: 1448px 320px whitesmoke, 1775px 166px whitesmoke, 332px 136px whitesmoke,
+    878px 340px whitesmoke, 569px 183px whitesmoke, 1422px 168px whitesmoke, 1946px 190px whitesmoke,
+    121px 97px whitesmoke, 1044px 106px whitesmoke, 463px 301px whitesmoke, 423px 112px whitesmoke,
+    523px 179px whitesmoke, 779px 54px whitesmoke, 1398px 94px whitesmoke, 1085px 146px whitesmoke,
+    1599px 186px whitesmoke, 801px 188px whitesmoke, 779px 231px whitesmoke, 552px 332px whitesmoke,
+    1057px 119px whitesmoke, 282px 280px whitesmoke, 496px 196px whitesmoke, 1833px 112px whitesmoke,
+    1802px 129px whitesmoke, 6px 166px whitesmoke, 412px 190px whitesmoke, 605px 48px whitesmoke,
+    24px 121px whitesmoke, 234px 320px whitesmoke, 544px 344px whitesmoke, 1107px 170px whitesmoke,
+    270px 163px whitesmoke, 1931px 149px whitesmoke, 1807px 38px whitesmoke, 8px 39px whitesmoke,
+    1415px 69px whitesmoke, 1473px 211px whitesmoke, 1590px 141px whitesmoke, 270px 170px whitesmoke,
+    69px 142px whitesmoke, 1108px 105px whitesmoke, 1946px 128px whitesmoke, 371px 31px whitesmoke,
+    1490px 220px whitesmoke, 357px 185px whitesmoke, 363px 36px whitesmoke, 1896px 125px whitesmoke,
+    1979px 105px whitesmoke, 947px 342px whitesmoke, 1754px 242px whitesmoke, 514px 74px whitesmoke,
+    65px 147px whitesmoke, 1840px 57px whitesmoke, 950px 65px whitesmoke, 459px 350px whitesmoke,
+    1124px 150px whitesmoke, 481px 90px whitesmoke, 680px 83px whitesmoke, 797px 339px whitesmoke,
+    1977px 149px whitesmoke, 734px 174px whitesmoke, 210px 298px whitesmoke, 816px 328px whitesmoke,
+    686px 77px whitesmoke, 1721px 267px whitesmoke, 1663px 11px whitesmoke, 1481px 111px whitesmoke,
+    582px 248px whitesmoke, 1308px 93px whitesmoke, 628px 65px whitesmoke, 897px 153px whitesmoke,
+    270px 93px whitesmoke, 791px 46px whitesmoke, 1336px 172px whitesmoke, 1013px 165px whitesmoke,
+    1911px 95px whitesmoke, 587px 81px whitesmoke, 83px 46px whitesmoke, 930px 147px whitesmoke,
+    1587px 169px whitesmoke, 614px 200px whitesmoke, 302px 178px whitesmoke, 1711px 143px whitesmoke,
+    443px 90px whitesmoke, 1666px 14px whitesmoke, 1588px 116px whitesmoke, 273px 105px whitesmoke,
+    1679px 46px whitesmoke, 721px 264px whitesmoke, 1202px 10px whitesmoke, 166px 116px whitesmoke,
+    331px 162px whitesmoke, 430px 155px whitesmoke, 1585px 50px whitesmoke, 640px 38px whitesmoke,
+    822px 83px whitesmoke, 1760px 164px whitesmoke, 1122px 145px whitesmoke, 398px 131px whitesmoke,
+    689px 285px whitesmoke, 460px 62px whitesmoke, 1627px 35px whitesmoke, 348px 348px whitesmoke,
+    819px 194px whitesmoke, 981px 17px whitesmoke, 323px 76px whitesmoke, 979px 284px whitesmoke;
+}
+#stars3 {
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    animation: animStar 300s linear infinte;
+    box-shadow: 387px 187px white, 760px 156px white, 1487px 99px white,
+    948px 182px white, 1977px 100px white, 1284px 263px white, 656px 28px white,
+    1268px 163px white, 1820px 98px white, 642px 190px white, 296px 57px white,
+    921px 162px white, 476px 258px white, 658px 13px white, 117px 3px white;
+}
+@keyframes animStar {
+    from {
+        transform: translateX(0px);
+    }
+    to {
+        transform: translateX(-100px);
+    }
+}
+.search-btn{
+    background-color:#161633;
+    border: none;
+}
+.search-btn:hover{
+    background-color:#41418d;
+}
+.info{
+    display: inline;
+    margin: 20px 20px 0px 20px;
+}
+.milan{
+    color:white;
+    font-size: 30wh;
+    letter-spacing: 15px;
+}
+.milan-about{
+    font-size: 14vw;
+    letter-spacing: 15px;
+}
+.logo-header{
+    width: 100px;
+}
+.info-bio{
+    padding:0px 15px;
+    color:white;
+}
+.moon{
+    width: 200px;
+    position: absolute;
+    animation: movemoon 25s infinite;
+    overflow: hidden;
+    transition: transform 5s;
+    box-shadow: inset 5px 10px 50px rgb(0, 0, 0,0.3);
+    border-radius:50%;
+}
+.moon:hover{
+    transform: scale(1.2);
+}
+@keyframes movemoon {
+    0% {    
+        right:0%;
+        top:-200px;
+    }
+    100% {
+        right:50%;
+        top:40%;
+        transform:rotate(180deg);
+        width: 40px;
+    }
+  }
+/*
+    Section
+*/
+.section{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 25px;
+}
+
+.player{
+    background-color: white;
+    color:rgb(32, 32, 32);
+    position: relative;
+    left:50%;
+    border-radius: 15px;
+    transform: translateX(-50%);
+    box-shadow: 5px 10px 18px #000000;
+    width: 300px;
+}
+
+.player-img-box{
+    width: 300px;
+    height: 200px;
+    border-radius:14px 14px 0px 0px;
+    overflow: hidden;
+    position: relative;
+}
+.player-img{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    display: block;
+    object-fit: cover;
+    transition: transform 2s;
+}
+.player-img:hover{
+    transform: scale(1.5);
+}
+.player-volume{
+    position:absolute;
+    top:0;
+    font-size: 1.3rem;
+    color: #161633;
+    border:none;
+    background-color: white;
+    border: 1px solid gray;
+}
+.player-volumeMute:hover, .player-volumeUp:hover, .player-volumeDown:hover{
+    opacity: 0.8;
+}
+.player-volume-vol{
+    left: 231px;
+    border-radius: 2px;
+    padding:0px 2px 0px 2px;
+    opacity: 1;
+}
+.player-volumeMute{
+    padding:0px 5px 0px 5px;
+    border-radius: 15px 0 0 0;
+    left:0px;
+}
+.player-volumeUp{
+    left:269px;
+    padding:0px 3px 0px 3px;
+    border-radius: 0 15px 0 0;
+}
+.player-volumeDown{
+    left:202px;
+    padding:0px 7px 0px 7px;
+}
+.player-cher{
+    color:white;
+    font-size: 40px;
+    background-color: #161633;
+    border-top:4px solid rgb(0, 0, 0,0.3);
+    border-bottom: 4px solid rgb(255, 255, 255,0.3);
+    padding: 10px;
+    position: absolute;
+    top:100px;
+    transition: border-top 1s, border-bottom 1s, border-left 1s, border-right 1s,color 1s;
+    box-shadow: 5px 10px 18px #000000;
+}
+.player-cher:hover{
+    color:rgb(92, 136, 187);
+    border-top:4px solid rgb(255, 255, 255,0.3);
+    border-bottom: 4px solid rgb(0, 0, 0,0.3);
+}
+.player-cher-left{
+    z-index: -1;
+    left:-47px;
+    border-right: none;
+    border-left:2px solid rgb(255, 255, 255,0.3);
+    border-radius: 50% 0 0 50%;
+}
+.player-cher-left:hover{
+    border-left:2px solid rgb(0, 0, 0,0.3);
+}
+.player-cher-right{
+    right:-47px;
+    border-left: none;
+    border-right:2px solid rgb(0, 0, 0,0.3);
+    border-radius: 0 50% 50% 0;
+}
+.player-cher-right:hover{
+    border-right:2px solid rgb(0, 0, 0,0.3);
+}
+.player-song{
+    margin-top: 40px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-size:24px;
+}
+.player-btn{
+    box-sizing: border-box;
+    border: none;
+    border-radius: 50%;   
+    position: absolute;
+    color: white;
+    padding-left: 8px;
+    border-top:4px solid rgb(0, 0, 0,0.3);
+    border-right:2px solid rgb(0, 0, 0,0.3);
+    border-bottom: 4px solid rgb(255, 255, 255,0.3);
+    border-left:2px solid rgb(255, 255, 255,0.3);
+    transition: border-top 1s,border-right 1s, border-bottom 1s,border-left 1s, color 1s;
+}
+.player-btn:hover{
+    opacity: 0.99;
+    color:rgb(92, 136, 187);
+    border-top:2px solid rgb(255, 255, 255,0.3);
+    border-right:4px solid rgb(255, 255, 255,0.3);
+    border-bottom: 2px solid rgb(0, 0, 0,0.3);
+    border-left:4px solid rgb(0, 0, 0,0.3);
+}
+.player-btn-play{
+    background-color:#161633;
+    width: 80px;
+    height: 80px;   
+    top:160px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 2.4rem;
+}
+.player-btn-pause{
+    padding-left: 0;
+    background-color:#161633;
+    width: 80px;
+    height: 80px;   
+    top:160px;
+    left:50%;
+    transform: translateX(-50%);
+    font-size: 2.4rem;
+}
+.player-btn-back{
+    padding-right: 15px;
+    background-color:#41418d;
+    width: 50px;
+    height: 50px;   
+    top:175px;
+    left: 30%;
+    transform: translateX(-30%);
+    font-size: 1.2rem;
+}
+.player-btn-forw{
+    background-color:#41418d;
+    width: 50px;
+    height: 50px;   
+    top:175px;
+    left: 70%;
+    transform: translateX(-70%);
+    font-size: 1.2rem;
+}
+.player-range{
+    width: 300px;
+    height: 30px;
+    margin-bottom: 10px;
+    -webkit-appearance: none;
+    background: #41418d;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow:inset 0 0 5px rgba(0,0,0,1);
+}
+.player-range::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width:1px;
+    height: 30px;
+    background:#161633;
+    cursor: pointer;
+    box-shadow: -300px 0 0 300px #161633;
+}
+.player-listaBeatova{
+    background-color: transparent;
+    top:358px;
+    margin-left: -32px;
+    text-align: left;
+    list-style-type: none;
+    display: none;
+}
+.player-lista{
+    background-color:white;
+    border:1px solid black;
+    border-top: none;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    top:356px;
+    width:180px;
+    text-align: center;
+    font-weight: bold;
+    padding:1px 25px 4px 25px;
+    border-radius:0 0 50% 50%;
+    box-shadow: 5px 10px 18px #000000;
+    transition:background-color 1s;
+}
+.player-lista:hover{
+    background-color: rgb(195, 197, 221);
+}
+.player-listaUp{
+    margin: 10px;
+    width: 50px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding:3px 1px;
+    font-size: 25px;
+    float: right;
+}
+.lista-song{
+    padding:2px 10px;
+    margin-bottom: -1px;
+    border:1px solid rgb(241, 241, 241) ;
+    font-size: 1.4rem;
+    font-weight: bold;
+    opacity:0.8;
+    transition: opacity 0.5ms;
+}
+.lista-song>p{
+    margin-left: 15px;
+    height: 17px;
+}
+.lista-song:hover{
+    text-indent: 2px;
+    background-color: rgb(195, 197, 221);
+    cursor: pointer;
+    opacity: 1;
+}
+.lista-song:hover > .lista-play{
+    visibility: visible;
+    opacity: 1;
+}
+.lista-play{
+    font-size: 0.5em;
+    position: absolute;
+    margin-top:10px;
+    vertical-align: middle;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+.lista-duration{
+    font-size: 1em;
+    padding-bottom: 10px;
+    position: absolute;
+    right: 5px;
+    font-weight: lighter;
+}
+.player-download-btn{
+    border: none;
+    background: transparent;
+    width:50px;
+    padding-right:15px;
+    padding-left:15px;
+    margin: 0px 10px;
+}
+.player-download-btn:hover{
+    border: 1px solid linear-gradient(gray,white);
+    background: linear-gradient(white,gray);
+    border-radius: 10px;
+}
+/*
+    Footer
+*/
+
+.footer{
+    position:relative;
+    left:0;
+    bottom:0;
+    right:0;
+    background: linear-gradient(#0f0f20, #06060c);
+}
+
+.contact{
+    color: white;
+}
+.contact > form{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+    padding:10px;
+}
+.contact>form>label>input[type=email]{
+    width: 30vh;
+    border: none;
+    border-radius: 20px;
+    padding:10px;
+    margin:10px;
+}
+.contact>form>label>textarea{
+    width: 30vh;
+    height: 40vh;
+    border: none;
+    border-radius: 20px;
+    padding:10px;
+    margin:20px;
+}
+.contact > form > button{
+    width: 30vh;
+    text-align: center;
+    left:50%;
+    transform: translateX(-50%);
+    position: relative;
+    background-color: #0f0f20;
+    color:white;
+    border: none;
+    border-radius: 20px;
+    padding:10px;
+    margin-bottom:20px;
+}
+.contact>form>button:hover{
+    background-color: #161633;
+}
+@media only screen and (max-width : 991.5px){
+    .moon{
+        display: none;
+    }
+}
+@media only screen and (max-width : 450px){
+    .player-cher{
+        display: none;
+    }
+}
