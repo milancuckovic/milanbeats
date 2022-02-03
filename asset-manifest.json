@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/milanbeats/static/css/main.6fc2c5c1.css",
+    "main.js": "/milanbeats/static/js/main.441a83c9.js",
+    "index.html": "/milanbeats/index.html",
+    "main.6fc2c5c1.css.map": "/milanbeats/static/css/main.6fc2c5c1.css.map",
+    "main.441a83c9.js.map": "/milanbeats/static/js/main.441a83c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6fc2c5c1.css",
+    "static/js/main.441a83c9.js"
+  ]
+}
