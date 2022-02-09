@@ -9,7 +9,7 @@ function Header(){
             <Stars/>
             <div className="info">
                 <div className="info-logo">
-                    <img src="./Images/logomilan.svg" className="float-start logo-header p-0 m-0" />
+                    <img src="/milanbeats/Images/logomilan.svg" className="float-start logo-header p-0 m-0" />
                     <h1 className="milan">MILAN</h1>
                 </div>
                 <div>
